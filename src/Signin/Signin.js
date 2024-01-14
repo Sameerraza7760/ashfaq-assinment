@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 function Signin() {
   const navigate = useNavigate();
@@ -10,6 +12,8 @@ function Signin() {
   const handleSignup = async (e) => {};
 
   return (
+ <>
+ <Header/>
     <div>
       <div className="signup-container">
         <h2>Create an Account</h2>
@@ -49,6 +53,9 @@ function Signin() {
         </p>
       </div>
     </div>
+    <Footer/>
+ 
+ </>
   );
 }
 

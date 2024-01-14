@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Header from "../components/Header/Header";
 import './style.css'
+import Footer from "../components/Footer/Footer";
 function Signup() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -21,6 +22,8 @@ function Signup() {
   };
 
   return (
+   <>
+   <Header/>
     <div>
       <div className="signup-container">
         <h2>Create an Account</h2>
@@ -69,6 +72,8 @@ function Signup() {
         </p>
       </div>
     </div>
+    <Footer/>
+   </>
   );
 }
 
